@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida na Cidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Corrida na Cidade</h1>
+        <audio controls loop>
+            <source src="musica-fundo.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </header>
+
+    <nav>
+        <ul>
+            <li><button onclick="iniciarJogo()">Iniciar Jogo</button></li>
+            <li><button onclick="mostrarInstrucoes()">Instruções</button></li>
+            <li><button onclick="sair()">Sair</button></li>
+        </ul>
+    </nav>
+
+    <section id="carros" style="display: none;">
+        <h2>Seleção de Carros</h2>
+        <div class="carro" id="carro1">
+            <h3>Carro 1</h3>
+            <p>Velocidade: 100 km/h | Aceleração: 5s | Manuseio: 7/10</p>
+            <button onclick="personalizarCarro(1)">Personalizar</button>
+        </div>
+        <!-- Adicione mais carros conforme necessário -->
+    </section>
+
+    <section id="capitulos" style="display: none;">
+        <h2>Capítulos</h2>
+        <ol>
+            <li><button onclick="iniciarCapitulo(1)">Capítulo 1: Treinamento</button></li>
+            <li><button onclick="iniciarCapitulo(2)">Capítulo 2: Corrida Local</button></li>
+            <li><button onclick="iniciarCapitulo(3)">Capítulo 3: Desafio das Curvas</button></li>
+            <li><button onclick="iniciarCapitulo(4)">Capítulo 4: Grande Final</button></li>
+        </ol>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Corrida na Cidade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
